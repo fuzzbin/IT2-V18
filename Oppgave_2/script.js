@@ -70,10 +70,12 @@ function skrivUtBest() {
     if (antVoksne == 0 && antBarn == 0) {
         tekst += `Vennligst velg antall personer!`;
     }
-    else {
+    else if((antVoksne + antBarn) > 4 ){
         tekst += `Du har bestillt ${antVoksne + antBarn} billetter til ${a}, ${fordeling(antVoksne, antBarn)}. Totalprisen er kr ${beregnPris(antVoksne, antBarn)}, inklusiv grupperabatt på 20 prosent`;
     }
-    
+    else {
+        tekst += `Du har bestillt ${antVoksne + antBarn} billetter til ${a}, ${fordeling(antVoksne, antBarn)}. Totalprisen er kr ${beregnPris(antVoksne, antBarn)}.`
+    }
     utskrift.innerHTML = tekst;
 }
 

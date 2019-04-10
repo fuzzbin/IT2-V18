@@ -1,3 +1,8 @@
+<!--
+    Løsningsforslag på oppgave 1 eksamen V18 i IT2.
+    CC BY - Tom Jarle Christiansen - 2019
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,14 +17,15 @@
         <h1>Velkommen til museet</h1>
         <div id="bildekarusell">
             <img id="karusellbilde" src="./bilder/intro1.jpg" alt="Bilde av museet"><br>
-            <img id="ikon_info" class="ikon" src="./bilder/informasjon.jpg" alt="Bilde av museet">
-            <img id="ikon_aapningstider" class="ikon" src="./bilder/aapningstider.jpg" alt="Bilde av museet">
-            <img id="ikon_priser" class="ikon" src="./bilder/priser.jpg" alt="Bilde av museet">
+            <img id="ikon_info" class="ikon" onclick="skrivInfo(2)" src="./bilder/informasjon.jpg" alt="Bilde av museet">
+            <img id="ikon_aapningstider" class="ikon" onclick="skrivInfo(0)" src="./bilder/aapningstider.jpg" alt="Bilde av museet">
+            <img id="ikon_priser" class="ikon" onclick="skrivInfo(1)" src="./bilder/priser.jpg" alt="Bilde av museet">
             <div id="bilde_v" class="ikon" data-retning="venstre"><</div>
             <div id="bilde_h" class="ikon" data-retning="hoyre">></div>
             <div id="til_2" class="ikon"><a href="../Oppgave_2/index.html">2</a></div>
             <div id="til_3" class="ikon"><a href="../Oppgave_3/index.html">3</a></div>
-        </div>
+        </div><br>
+        <div id="infoElement"></div>
 
     </div>
     <script src="script.js"></script>

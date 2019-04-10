@@ -4,7 +4,6 @@
     position: relative;
 }
 
-
 #karusellbilde {
     width: 600px;
 }
@@ -20,7 +19,18 @@
     text-align: center;
 }
 
+.ikon:hover {
+    border: 3px solid black;
+}
+
 .ikon_informasjon {
     position: relative;
     float: left;
+}
+
+#infoElement {
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    margin-top: 40px;
 }
